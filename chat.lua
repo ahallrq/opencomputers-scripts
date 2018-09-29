@@ -27,7 +27,7 @@ SimpleLock = { isLocked = 0,
               if self.isLocked == 0 then
                 error("Lock has already been released!")
               else
-                self.isLocked = 1
+                self.isLocked = 0
               end
             end
 }

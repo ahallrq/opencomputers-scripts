@@ -67,7 +67,7 @@ res, err = pcall(function()
             print(s)
             if chat_notify then
                 for i=1,3 do
-                  computer.beep(500, 0.02)
+                  computer.beep(500, 0.05)
                 end
             end
         end

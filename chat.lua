@@ -7,6 +7,7 @@ local text = require("text")
 
 local chat_port = 9999
 local chat_name = "YOUR NAME HERE"
+local chat_notify = true
 
 local m = component.modem
 m.open(9999)
@@ -63,7 +64,12 @@ res, err = pcall(function()
         local res, _, from, port, _, user, msg = event.pull("modem_message")
         if res ~= nil then
             s = "<"..user.."> "..msg
-            print(s, true)
+            print(s)
+            if chat_notify then
+                for i=1,3 do
+                  computer.beep(500, 0.02)
+                end
+            end
         end
         os.sleep(0.05)
     end

@@ -4,6 +4,7 @@ local event = require("event")
 local io = require("io")
 local term = require("term")
 local text = require("text")
+local computer = require("computer")
 
 local chat_port = 9999
 local chat_name = "YOUR NAME HERE"

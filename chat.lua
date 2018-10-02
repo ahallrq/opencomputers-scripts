@@ -94,7 +94,7 @@ res, err = pcall(function()
   end
 end)
 
-if timer then
+if t then
   t:kill()
 end
 
